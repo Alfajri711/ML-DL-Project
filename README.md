@@ -71,3 +71,42 @@ Fungsi loss menggunakan Cross Entropy Loss dan optimizer Adam dengan learning ra
 Melalui 10 epoch training, didapatkan akurasi sekitar 97.5% pada data testing. Hal ini menunjukkan model berhasil mengklasifikasikan digit tulisan tangan dengan baik. Confusion matrix dan classification report juga menunjukkan performa yang baik untuk semua kelas digit.
 
 # **Project 04_Bonus_Earth_Muhammad-Asri-Alfajri.ipynb**
+**Klasifikasi MNIST Menggunakan PyTorch**
+Repository ini berisi kode Python untuk melatih dan mengevaluasi model jaringan saraf untuk mengklasifikasi dataset tangan tertulis MNIST menggunakan PyTorch.
+
+**Model**
+Kode ini mendefinisikan 3 arsitektur model:
+1. ShallowModel - Model dengan 1 lapisan tersembunyi dengan 64 unit
+2. MediumModel - Model dengan 2 lapisan tersembunyi masing-masing 128 dan 64 unit
+3. DeepModel - Model dengan 3 lapisan tersembunyi masing-masing 256, 128, dan 64 unit
+Model-model ini memungkinkan eksperimen dengan kedalaman model yang berbeda.
+
+**Fungsi Aktivasi**
+Model mendukung fungsi aktivasi yang berbeda yang ditentukan saat inisialisasi:
+1. ReLU
+2. Sigmoid
+3. Tanh
+Hal ini memungkinkan eksperimen dengan fungsi aktivasi yang berbeda.
+
+**Fungsi Loss**
+Fungsi loss yang berbeda juga dapat dieksperimenkan:
+1. Cross Entropy Loss
+2. Sparse Cross Entropy Loss
+3. Hinge Loss
+   
+**Pelatihan**
+Model dilatih selama 10 epoch dengan optimizer Adam dan learning rate 0,001.
+Loss pelatihan dan akurasi dicetak setiap epoch.
+
+**Evaluasi**
+Model yang sudah dilatih dievaluasi pada dataset test menggunakan:
+1. Akurasi
+2. Presisi
+3. Recall
+4. F1 Score
+5. Confusion Matrix
+Hal ini memungkinkan evaluasi komprehensif dari setiap konfigurasi model.
+
+**Eksperimen**
+Kode ini menjalankan eksperimen dengan semua kombinasi arsitektur model, fungsi aktivasi, dan fungsi loss.
+Hasilnya disimpan dalam dictionary dan dicetak di akhir untuk memudahkan perbandingan.
