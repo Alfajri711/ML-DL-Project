@@ -1,41 +1,54 @@
 # ML-DL-Project
+
 # **Project 04_01_Earth_Muhammad-Asri-Alfajri.ipynb**
 
-**Judul Proyek**
+**1. Judul Proyek**
+
 Analisis Pengguna yang Berhenti Menggunakan Layanan Bank
 
-**Deskripsi Singkat**
+**2. Deskripsi Singkat**
+
 Proyek ini bertujuan untuk memprediksi apakah seorang nasabah bank akan berhenti menggunakan layanan bank berdasarkan data demografis dan perilaku nasabah tersebut.
 
-**Data**
+**3. Data**
+
 Data yang digunakan berasal dari file SC_HW1_bank_data.csv. Data berisi informasi seperti:
 
-**Demografi nasabah (umur, jenis kelamin, lokasi)**
+**4. Demografi nasabah (umur, jenis kelamin, lokasi)**
+
 Perilaku nasabah (jumlah produk yang dimiliki, apakah memiliki kartu kredit, dan lain-lain)
 Target: Apakah nasabah berhenti menggunakan layanan bank (kolom Exited)
 
-**Pemodelan**
+**5. Pemodelan**
+
 Dilakukan pemodelan menggunakan 3 model:
 1. Logistic Regression
 2. K-Nearest Neighbors
 3. Random Forest
 Ketiga model dievaluasi menggunakan metrik akurasi, precision, recall, F1-score, dan confusion matrix.
 
-**Kesimpulan**
+**6. Kesimpulan**
+
 Berdasarkan evaluasi, model Random Forest merupakan model terbaik karena memiliki akurasi, F1-score, dan recall yang lebih tinggi dibandingkan model lainnya.
 
 # **Project 04_02_Earth_Muhammad-Asri-Alfajri.ipynb**
 
-**Clustering Data Acak Menggunakan K-Means**
-**Deskripsi Singkat**
+**1. Judul Proyek**
+
+Clustering Data Acak Menggunakan K-Means
+
+**2. Deskripsi Singkat**
+
 Melakukan clustering pada data acak (random) menggunakan algoritma K-Means. Data acak yang digunakan di-generate secara random.
 
-**Data**
+**3. Data**
+
 Data berasal dari file cluster_s1.csv yang berisi 500 baris data acak dengan kolom:
 x: nilai acak 1
 y: nilai acak 2
 
-**Tahapan**
+**4. Tahapan**
+
 Beberapa tahapan yang dilakukan:
 1. Import library yang dibutuhkan
 2. Membaca data dari file csv
@@ -45,60 +58,79 @@ Beberapa tahapan yang dilakukan:
 6. Menghitung silhouette score untuk mengevaluasi hasil cluster
 7. Melakukan visualisasi hasil cluster dengan scatter plot dan memberi warna berbeda untuk setiap cluster
    
-**Kesimpulan**
+**5. Kesimpulan**
+
 Dari analisis Elbow Method, didapatkan bahwa jumlah cluster terbaik adalah 15 cluster. Kemudian dilakukan proses clustering menggunakan K-Means dengan 15 cluster. Hasil cluster dievaluasi menggunakan silhouette score.
 
 # **Project 04_03_Earth_Muhammad-Asri-Alfajri.ipynb**
 
-**Klasifikasi Digit Tulisan Tangan MNIST dengan PyTorch**
-**Deskripsi Singkat**
+**1. Judul Proyek**
+
+Klasifikasi Digit Tulisan Tangan MNIST dengan PyTorch
+
+**2. Deskripsi Singkat**
+
 Melakukan klasifikasi digit tulisan tangan pada dataset MNIST menggunakan jaringan syaraf (neural network) sederhana dengan PyTorch.
 
-**Dataset**
+**3. Dataset**
+
 Dataset MNIST terdiri dari 70.000 gambar grayscale 28x28 piksel yang berisi digit tulisan tangan 0 sampai 9.
 Dataset dibagi menjadi:
 1. 60.000 data latih
 2. 10.000 data uji
 
-**Arsitektur Model**
+**4. Arsitektur Model**
+
 Model terdiri dari 3 lapisan fully connected layer dengan aktivasi ReLU:
 1. Layer 1: 128 node
 2. Layer 2: 64 node
 3. Layer 3 (output): 10 node (sesuai jumlah kelas 0-9)
 Fungsi loss menggunakan Cross Entropy Loss dan optimizer Adam dengan learning rate 0.001.
 
-**Hasil**
+**5. Hasil**
+
 Melalui 10 epoch training, didapatkan akurasi sekitar 97.5% pada data testing. Hal ini menunjukkan model berhasil mengklasifikasikan digit tulisan tangan dengan baik. Confusion matrix dan classification report juga menunjukkan performa yang baik untuk semua kelas digit.
 
 # **Project 04_Bonus_Earth_Muhammad-Asri-Alfajri.ipynb**
-**Klasifikasi MNIST Menggunakan PyTorch**
+
+**1. Judul Proyek**
+
+"Klasifikasi MNIST Menggunakan PyTorch"
+
+**2. Deskripsi Singkat**
+
 Repository ini berisi kode Python untuk melatih dan mengevaluasi model jaringan saraf untuk mengklasifikasi dataset tangan tertulis MNIST menggunakan PyTorch.
 
-**Model**
+**3. Model**
+
 Kode ini mendefinisikan 3 arsitektur model:
 1. ShallowModel - Model dengan 1 lapisan tersembunyi dengan 64 unit
 2. MediumModel - Model dengan 2 lapisan tersembunyi masing-masing 128 dan 64 unit
 3. DeepModel - Model dengan 3 lapisan tersembunyi masing-masing 256, 128, dan 64 unit
 Model-model ini memungkinkan eksperimen dengan kedalaman model yang berbeda.
 
-**Fungsi Aktivasi**
+**4. Fungsi Aktivasi**
+
 Model mendukung fungsi aktivasi yang berbeda yang ditentukan saat inisialisasi:
 1. ReLU
 2. Sigmoid
 3. Tanh
 Hal ini memungkinkan eksperimen dengan fungsi aktivasi yang berbeda.
 
-**Fungsi Loss**
+**5. Fungsi Loss**
+
 Fungsi loss yang berbeda juga dapat dieksperimenkan:
 1. Cross Entropy Loss
 2. Sparse Cross Entropy Loss
 3. Hinge Loss
    
-**Pelatihan**
+**6. Pelatihan**
+
 Model dilatih selama 10 epoch dengan optimizer Adam dan learning rate 0,001.
 Loss pelatihan dan akurasi dicetak setiap epoch.
 
-**Evaluasi**
+**7. Evaluasi**
+
 Model yang sudah dilatih dievaluasi pada dataset test menggunakan:
 1. Akurasi
 2. Presisi
